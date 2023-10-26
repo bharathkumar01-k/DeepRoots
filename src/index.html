@@ -6,38 +6,44 @@
         <title>DeepRoots</title>
         <link rel="stylesheet" href="output.css" />
     </head>
-    <body class="bg-lightGray text-darkBlue overflow-x-hidden">
+
+    <body class="text-textColor overflow-x-hidden">
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="mt-2">
-                    <img src="images/logo.svg" alt="" srcset="" />
+                    <img src="images/DeepRoots.svg" alt="" srcset="" />
                 </div>
                 <div>
                     <ul class="space-x-6">
                         <li class="hidden lg:inline hover:text-textBlue">
-                            <a href="#">About Us</a>
+                            <a href="#">Home</a>
                         </li>
                         <li class="hidden lg:inline hover:text-textBlue">
-                            <a href="#">Contract</a>
+                            <a href="about.html">About Us</a>
                         </li>
                         <li class="hidden lg:inline hover:text-textBlue">
-                            <a href="#">Hotels</a>
+                            <a href="hotelOps.html">Hotel Operations</a>
                         </li>
                         <li class="hidden lg:inline hover:text-textBlue">
-                            <a href="#">Locations</a>
+                            <a href="futurePlans.html">Future Plans</a>
                         </li>
                         <li class="hidden lg:inline hover:text-textBlue">
+                            <a href="upcomingLocations.html"
+                                >Upcoming Locations</a
+                            >
+                        </li>
+                        <!-- <li class="hidden lg:inline hover:text-textBlue">
                             <a href="#">Meetings</a>
                         </li>
                         <li class="hidden lg:inline hover:text-textBlue">
                             <a href="#">Offers</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="">
                     <a
                         href="#"
-                        class="bg-red-400 text-white p-3 rounded-lg hover:bg-red-500 hidden lg:block"
+                        class="bg-lightGreen text-white p-3 rounded-lg hover:bg-darkGreen hidden lg:block"
                         >Contact Us</a
                     >
                 </div>
@@ -72,21 +78,31 @@
             </div>
         </nav>
         <!-- Carousel Section -->
+        <div class="text-center"></div>
         <section
             id="carousel"
             class="m-0 w-full container p-6 mt-3 flex flex-col items-center space-y-20 lg:space-y-0 lg:space-x-6 md:mx-auto lg:flex-row"
         >
             <div
-                class="w-1/3 mt-16 lg:my-auto text-center order-2 lg:order-1 tracking-wider"
+                class="w-full md:w-1/3 mt-16 lg:my-auto text-center order-2 lg:order-1 tracking-wider"
             >
-                <h1 class="text-4xl md:text-6xl font-bold" id="property-name">
+                <h1
+                    class="p-2 text-navy_light text-5xl text-center md:text-5xl font-bold md:p-8"
+                    id="main-text"
+                >
+                    Book Hotels With Us
+                </h1>
+                <h1
+                    class="text-4xl md:text-4xl font-bold text-duck_blue"
+                    id="property-name"
+                >
                     New Hotels
                 </h1>
                 <p class="mt-4">
                     <span id="area">Egmore</span>,<span id="city">Chennai</span>
                 </p>
                 <button
-                    class="p-3 bg-red-400 text-white mt-4 rounded-lg hover:bg-red-500"
+                    class="p-3 bg-lightGreen text-white mt-4 rounded-lg hover:bg-darkGreen"
                 >
                     Explore Now
                 </button>
@@ -142,46 +158,64 @@
             >
                 <div
                     id="card"
-                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4"
+                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4 justify-evenly align-text-top"
                 >
-                    <h3 class="text-xl lg:text-3xl font-bold">Topic</h3>
-                    <p class="text-base md:text-lg mt-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Suscipit excepturi commodi laudantium eveniet
-                        vitae assumenda praesentium autem animi natus tempore
-                        totam, earum aut sit. Culpa aliquid labore illum quaerat
-                        maxime?
-                    </p>
+                    <h3 class="text-xl text-duck_blue lg:text-3xl font-bold">
+                        Setting the Standard
+                        <div class="text-navy_dark mt-2">
+                            Building a Culture of Excellence in Hospitality
+                        </div>
+                    </h3>
+                    <div class="md:text-lg mt-4 text-4xl">
+                        <ul>
+                            <li>excellent customer service</li>
+                            <li>customer-centric approach</li>
+                            <li>service standards</li>
+                            <li>quality assurance</li>
+                        </ul>
+                    </div>
                 </div>
                 <div
                     id="card"
-                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4"
+                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4 justify-evenly align-text-top"
                 >
-                    <h3 class="text-xl lg:text-3xl font-bold">Topic</h3>
-                    <p class="text-lg mt-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Suscipit excepturi commodi laudantium eveniet
-                        vitae assumenda praesentium autem animi natus tempore
-                        totam, earum aut sit. Culpa aliquid labore illum quaerat
-                        maxime?
-                    </p>
+                    <h3 class="text-xl text-duck_blue lg:text-3xl font-bold">
+                        Creating Memorable Experiences
+                        <div class="text-navy_dark mt-2">
+                            Enhancing Customer Engagement and Loyalty
+                        </div>
+                    </h3>
+                    <div class="text-lg mt-4">
+                        <ul>
+                            <li>customer engagement strategies</li>
+                            <li>loyalty programs</li>
+                            <li>guest recognition initiatives</li>
+                            <li>personalized communication</li>
+                        </ul>
+                    </div>
                 </div>
                 <div
                     id="card"
-                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4"
+                    class="reveal bg-white text-center flex flex-col rounded-2xl p-4 justify-evenly align-text-top"
                 >
-                    <h3 class="text-xl lg:text-3xl font-bold">Topic</h3>
-                    <p class="text-lg mt-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Suscipit excepturi commodi laudantium eveniet
-                        vitae assumenda praesentium autem animi natus tempore
-                        totam, earum aut sit. Culpa aliquid labore illum quaerat
-                        maxime?
-                    </p>
+                    <h3 class="text-xl text-duck_blue lg:text-3xl font-bold">
+                        Innovation in Hospitality
+                        <div class="text-navy_dark mt-2">
+                            Leveraging Technology for a Seamless Guest
+                            Experience
+                        </div>
+                    </h3>
+                    <div class="text-lg mt-4">
+                        <ul>
+                            <li>customer feedback management systems</li>
+                            <li>online reviews and ratings platforms</li>
+                            <li>continuous improvement strategies</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section
+        <!-- <section
             id="strength"
             class="reveal container mx-auto p-6 my-auto flex"
         >
@@ -202,11 +236,11 @@
                     tenetur.
                 </p>
             </div>
-        </section>
+        </section> -->
         <section id="slicerooms" class="reveal container mx-auto p-6 leading-5">
             <div class="flex flex-col">
                 <h2 class="text-3xl md:text-4xl font-bold text-center">
-                    Core Values and SliceRooms
+                    SliceRooms
                 </h2>
                 <div
                     class="mt-4 flex flex-col items-center md:justify-between lg:flex-row"
@@ -214,15 +248,38 @@
                     <p
                         class="text-base md:text-lg lg:w-1/2 my-auto order-2 text-center lg:text-left lg:order-1"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod fugiat sunt velit sequi in obcaecati, cumque odit
-                        eos nobis veritatis. Dignissimos enim labore distinctio
-                        nemo impedit consequuntur maxime porro quas. Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Commodi ea
-                        at ratione consequuntur eos porro voluptas. Autem enim
-                        distinctio alias, blanditiis dicta dignissimos
-                        temporibus nobis? Aut distinctio praesentium perferendis
-                        labore.
+                        Introducing SliceRooms, a groundbreaking micro stay
+                        concept online travel agency (OTA). Since its inception
+                        in 2015, SliceRooms has rapidly expanded its presence in
+                        the Indian market, successfully partnering with over
+                        1300 hotels across 100+ cities. As pioneers in this
+                        niche sector, we have established a strong foothold in
+                        all frontiers of the industry. With our user-friendly
+                        platform and extensive network, travellers can now
+                        easily book short stays at affordable rates,
+                        revolutionizing the way people experience hospitality on
+                        their journeys.<br />
+                        <br />
+                        Our platform offers an innovative solution to address
+                        the problem of underutilized rooms, allowing hotels to
+                        maximize their revenue potential while providing
+                        customers with flexible and affordable accommodation
+                        options. With SliceRooms.com, travellers can now book
+                        rooms for shorter durations, catering to their specific
+                        needs without having to pay for an entire day's stay.
+                        <br /><br />
+                        By leveraging our cutting-edge technology and extensive
+                        network of partner hotels, we ensure that travellers
+                        have access to a wide range of options at competitive
+                        prices. Our user-friendly interface and secure booking
+                        process guarantee a seamless experience for both
+                        hoteliers and guests.
+                        <br />
+                        <br />
+                        Join us in reshaping the way people travel and make the
+                        most out of unutilized room inventory. Experience
+                        convenience, affordability, and flexibility like never
+                        before with SliceRooms.com.
                     </p>
                     <img
                         src="https://www.slicerooms.com/images/site-images/logo-slicerooms-20220212.png"
@@ -235,20 +292,20 @@
         </section>
         <!-- <section
             id="cta"
-            class="container mx-auto p-6 flex justify-between bg-red-400"
+            class="container mx-auto p-6 flex justify-between bg-lightGreen"
         >
             <div class="w-full flex justify-between">
                 <h2 class="text-white text-6xl font-bold text-center">
                     Explore Our Properties
                 </h2>
                 <a
-                    class="p-3 px-6 bg-white text-red-400 mt-4 rounded-lg hover:bg-red-500"
+                    class="p-3 px-6 bg-white text-red-400 mt-4 rounded-lg hover:bg-darkGreen"
                 >
                     View
                 </a>
             </div>
         </section> -->
-        <footer class="bg-darkBlue">
+        <footer class="bg-footerColor">
             <div
                 class="container flex flex-col-reverse text-white text-center px-6 py-10 space-y-8 mx-auto lg:flex-row lg:space-y-0 justify-between"
             >

@@ -18,6 +18,13 @@ module.exports = {
                 lightGray: "#F9F7F7",
                 textBlue: "#3F72AF",
                 darkBlue: "#112D4E",
+                textColor: "#2F4858",
+                lightGreen: '#949c8c',
+                darkGreen: "#535f32",
+                footerColor: "#3B5E3E",
+                navy_dark: "#002D62",
+                navy_light: "#13274F",
+                duck_blue: "#007791"
             },
         },
     },

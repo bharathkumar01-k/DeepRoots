@@ -4,6 +4,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #fbf3f3;
 }
 
 #main-img:hover{
