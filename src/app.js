@@ -40,10 +40,17 @@ window.addEventListener('scroll', reveal)
 
 const staticFiles = [{
     propertyName: "Hotel AKMG Towers",
-    area: "Rathna Residency",
+    area: "Near Central",
     city: "Chennai",
     imgSource: "images/akmg.jpeg",
     link: "https://www.hotelakmgtowers.com/"
+},
+{
+    propertyName: "Rathna Residency",
+    area: "Teynampet",
+    city: "Chennai",
+    imgSource: "images/rathna_residency.jpg",
+    link: "https://www.chennai.hotelrathnaresidency.com/"
 },
 {
     propertyName: "Orchid Resorts",
@@ -51,7 +58,7 @@ const staticFiles = [{
     city: "Chennai",
     imgSource: "images/orchid.jpeg",
     link: "https://orchidresortsecr.com/"
-},
+}
 ]
 
 console.log(propertyName.innerText)
@@ -81,4 +88,4 @@ setInterval(() => {
     city.innerText = staticFiles[index].city
     img.src = staticFiles[index].imgSource
     websiteLink.href = staticFiles[index].link
-}, 6000)
+}, 4000)
