@@ -1,5 +1,12 @@
+const img = document.querySelector('#hotel-img')
+const propertyName = document.querySelector('#property-name')
+const area = document.querySelector('#area')
+const city = document.querySelector('#city')
+const exploreNowBtn = document.querySelector('#explore-now-button')
+const websiteLink = document.querySelector('#hotel-website')
 const hamburgerIcon = document.querySelector('#hamburger')
 const mobileMenu = document.querySelector('#menu')
+
 hamburgerIcon.addEventListener('click', () => {
     if (hamburgerIcon.firstElementChild.id === 'closeBtn') {
         hamburgerIcon.innerHTML = '<svg id="hamburgerBtn"xmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 24 24"stroke-width="1.5"stroke="currentColor"class="w-6 h-6 block hamburger lg:hidden focus:outline-none"><path stroke-linecap="round" stroke-linejoin="round"d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>'
@@ -9,7 +16,9 @@ hamburgerIcon.addEventListener('click', () => {
     }
 
     mobileMenu.classList.toggle('flex');
-    mobileMenu.classList.toggle('hidden')
+    mobileMenu.classList.toggle('hidden');
+    img.classList.toggle('hidden');
+    console.log('toggle', img.classList)
 })
 
 
@@ -30,30 +39,29 @@ const reveal = () => {
 window.addEventListener('scroll', reveal)
 
 const staticFiles = [{
-    propertyName: "New Hotels",
-    area: "Egmore",
+    propertyName: "Hotel AKMG Towers",
+    area: "Rathna Residency",
     city: "Chennai",
-    imgSource: "images/room2.jpeg"
+    imgSource: "images/akmg.jpeg",
+    link: "https://www.hotelakmgtowers.com/"
 },
 {
-    propertyName: "Marriott",
+    propertyName: "Orchid Resorts",
     area: "ECR",
     city: "Chennai",
-    imgSource: "images/room3.jpeg"
+    imgSource: "images/orchid.jpeg",
+    link: "https://orchidresortsecr.com/"
 },
-{
-    propertyName: "Hyatt",
-    area: "New Area",
-    city: "Assam",
-    imgSource: "images/room4.jpeg"
-}]
+]
 
-const img = document.querySelector('#hotel-img')
-const propertyName = document.querySelector('#property-name')
-const area = document.querySelector('#area')
-const city = document.querySelector('#city')
 console.log(propertyName.innerText)
 let toggle = false;
+let link = staticFiles[0].link
+exploreNowBtn.addEventListener('click', (e) => {
+    console.log('clicked', link)
+    window.open(link)
+})
+
 setInterval(() => {
     console.log('In timeout function')
     let index = staticFiles.findIndex((proprty) => proprty.propertyName === propertyName.innerText)
@@ -66,8 +74,11 @@ setInterval(() => {
         index += 1
         console.log('in else')
     }
+    console.log(websiteLink.href)
+    link = staticFiles[index].link
     propertyName.innerText = staticFiles[index].propertyName
     area.innerText = staticFiles[index].area
     city.innerText = staticFiles[index].city
     img.src = staticFiles[index].imgSource
-}, 4000)
+    websiteLink.href = staticFiles[index].link
+}, 6000)

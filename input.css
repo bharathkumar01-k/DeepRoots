@@ -67,3 +67,8 @@ section.reveal.active:nth-of-type(4){
 #carousel{
     transition: all 2s ease;
 }
+
+#logo-img{
+    width: 22%;
+    height: 11%;
+}

@@ -10,8 +10,8 @@
     <body class="text-textColor overflow-x-hidden">
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
-                <div class="mt-2">
-                    <img src="images/DeepRoots.svg" alt="" srcset="" />
+                <div id="logo-img">
+                    <img src="images/deeproots.svg" alt="" srcset="" />
                 </div>
                 <div>
                     <ul class="space-x-6">
@@ -68,12 +68,22 @@
                     id="menu"
                     class="absolute flex-col hidden items-center lg:hidden top-10 self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
                 >
-                    <a href="#">About Us</a>
-                    <a href="#">Contract</a>
-                    <a href="#">Hotels</a>
-                    <a href="#">Locations</a>
-                    <a href="#">Meetings</a>
-                    <a href="#">Offers</a>
+                    <a href="#">Home</a>
+
+                    <a href="about.html">About Us</a>
+
+                    <a href="hotelOps.html">Hotel Operations</a>
+
+                    <a href="futurePlans.html">Future Plans</a>
+
+                    <a href="upcomingLocations.html">Upcoming Locations</a>
+
+                    <!-- <li class="hidden lg:inline hover:text-textBlue">
+                        <a href="#">Meetings</a>
+                    </li>
+                    <li class="hidden lg:inline hover:text-textBlue">
+                        <a href="#">Offers</a>
+                    </li> -->
                 </div>
             </div>
         </nav>
@@ -96,12 +106,15 @@
                     class="text-4xl md:text-4xl font-bold text-duck_blue"
                     id="property-name"
                 >
-                    New Hotels
+                    Hotel AKMG Towers
                 </h1>
                 <p class="mt-4">
-                    <span id="area">Egmore</span>,<span id="city">Chennai</span>
+                    <span id="area">Rathna Residency</span>,<span id="city"
+                        >Chennai</span
+                    >
                 </p>
                 <button
+                    id="explore-now-button"
                     class="p-3 bg-lightGreen text-white mt-4 rounded-lg hover:bg-darkGreen"
                 >
                     Explore Now
@@ -111,13 +124,19 @@
                 id="main-img"
                 class="scale-x-125 scale-y-150 lg:scale-100 w-2/3 order-1 lg:order-2"
             >
-                <img
-                    id="hotel-img"
-                    class="w-auto h-auto md:w-full md:h-50v lg:h-80v"
-                    src="images/room.jpeg"
-                    alt=""
-                    srcset=""
-                />
+                <a
+                    id="hotel-website"
+                    href="https://www.hotelakmgtowers.com/"
+                    target="_blank"
+                >
+                    <img
+                        id="hotel-img"
+                        class="w-auto h-auto md:w-full md:h-50v lg:h-80v"
+                        src="images/akmg.jpeg"
+                        alt=""
+                        srcset=""
+                    />
+                </a>
             </div>
         </section>
         <!-- <section id="vandm" class="reveal container mx-auto p-6 flex">
@@ -166,7 +185,7 @@
                             Building a Culture of Excellence in Hospitality
                         </div>
                     </h3>
-                    <div class="md:text-lg mt-4 text-4xl">
+                    <div class="text-lg mt-4">
                         <ul>
                             <li>excellent customer service</li>
                             <li>customer-centric approach</li>
@@ -305,7 +324,7 @@
                 </a>
             </div>
         </section> -->
-        <footer class="bg-footerColor">
+        <!-- <footer class="bg-footerColor">
             <div
                 class="container flex flex-col-reverse text-white text-center px-6 py-10 space-y-8 mx-auto lg:flex-row lg:space-y-0 justify-between"
             >
@@ -388,7 +407,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <script src="app.js
         "></script>
     </body>
